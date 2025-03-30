@@ -18,25 +18,21 @@ const Approach = () => {
             icon={<Target className="h-12 w-12 text-tenx-green" />}
             title="Strategic Selection"
             description="We carefully identify businesses with strong fundamentals, innovative solutions, and exceptional leadership in underserved markets."
-            number="01"
           />
           <ApproachStep
             icon={<Users className="h-12 w-12 text-tenx-green" />}
             title="Founder Partnership"
             description="We work closely with founders, sharing our expertise while respecting their vision and understanding of their market."
-            number="02"
           />
           <ApproachStep
             icon={<CircleCheck className="h-12 w-12 text-tenx-green" />}
             title="Operational Excellence"
             description="We help streamline operations, strengthen business models, and implement best practices to maximize efficiency and profitability."
-            number="03"
           />
           <ApproachStep
             icon={<TrendingUp className="h-12 w-12 text-tenx-green" />}
             title="Scaled Growth"
             description="We leverage our network and resources to help portfolio companies expand into new markets and reach their full potential."
-            number="04"
           />
         </div>
       </div>
@@ -48,15 +44,11 @@ interface ApproachStepProps {
   icon: React.ReactNode;
   title: string;
   description: string;
-  number: string;
 }
 
-const ApproachStep = ({ icon, title, description, number }: ApproachStepProps) => {
+const ApproachStep = ({ icon, title, description }: ApproachStepProps) => {
   return (
-    <div className="relative">
-      <div className="absolute -left-2 top-0 opacity-30 text-6xl font-bold font-heading text-tenx-white">
-        {number}
-      </div>
+    <div className="relative p-6 bg-tenx-gray/30 rounded-lg hover:bg-tenx-gray/50 transition-colors">
       <div className="relative z-10">
         <div className="mb-4">{icon}</div>
         <h3 className="heading-sm mb-3">{title}</h3>

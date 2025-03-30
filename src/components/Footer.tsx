@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { Linkedin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -33,9 +34,16 @@ const Footer = () => {
             &copy; {currentYear} TenX Capital. All rights reserved.
           </p>
           <div className="flex items-center space-x-4">
-            <FooterSocialLink href="#" label="Twitter" />
-            <FooterSocialLink href="#" label="LinkedIn" />
-            <FooterSocialLink href="#" label="Instagram" />
+            <a
+              href="https://www.linkedin.com/company/tenx-capital"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-tenx-white/80 hover:text-tenx-green transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
       </div>
@@ -55,23 +63,6 @@ const FooterLink = ({ href, children }: FooterLinkProps) => {
       className="text-tenx-white/80 hover:text-tenx-green transition-colors"
     >
       {children}
-    </a>
-  );
-};
-
-interface FooterSocialLinkProps {
-  href: string;
-  label: string;
-}
-
-const FooterSocialLink = ({ href, label }: FooterSocialLinkProps) => {
-  return (
-    <a
-      href={href}
-      className="text-tenx-white/80 hover:text-tenx-green transition-colors"
-      aria-label={label}
-    >
-      {label}
     </a>
   );
 };

@@ -20,12 +20,14 @@ const Portfolio = () => {
             description="A fintech platform revolutionizing cross-border payments across African markets, making international transactions seamless and affordable."
             image="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=1000"
             category="Financial Technology"
+            websiteUrl="https://zole.app/"
           />
           <PortfolioCard
             name="OneCliq"
             description="An e-commerce solution providing small African businesses with tools to reach global markets through simplified logistics and payment processing."
             image="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1000"
             category="E-Commerce"
+            websiteUrl="https://www.onecliq.io/"
           />
         </div>
 
@@ -47,9 +49,10 @@ interface PortfolioCardProps {
   description: string;
   image: string;
   category: string;
+  websiteUrl: string;
 }
 
-const PortfolioCard = ({ name, description, image, category }: PortfolioCardProps) => {
+const PortfolioCard = ({ name, description, image, category, websiteUrl }: PortfolioCardProps) => {
   return (
     <div className="group bg-tenx-gray rounded-lg overflow-hidden shadow-md border border-tenx-green/10 hover:shadow-lg transition-all">
       <div className="aspect-w-16 aspect-h-9 relative">
@@ -67,14 +70,26 @@ const PortfolioCard = ({ name, description, image, category }: PortfolioCardProp
       <div className="p-6">
         <div className="flex justify-between items-center mb-3">
           <h3 className="text-2xl font-heading font-bold text-tenx-white">{name}</h3>
-          <button className="h-8 w-8 rounded-full flex items-center justify-center bg-tenx-green/10 text-tenx-green hover:bg-tenx-green hover:text-white transition-colors">
+          <a 
+            href={websiteUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="h-8 w-8 rounded-full flex items-center justify-center bg-tenx-green/10 text-tenx-green hover:bg-tenx-green hover:text-white transition-colors"
+          >
             <ArrowUpRight className="h-4 w-4" />
-          </button>
+          </a>
         </div>
         <p className="text-tenx-white/90 mb-4">{description}</p>
-        <Button variant="outline" className="w-full border-tenx-green/30 text-tenx-white hover:bg-tenx-green/10">
-          Learn More
-        </Button>
+        <a 
+          href={websiteUrl} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-block w-full"
+        >
+          <Button variant="outline" className="w-full border-tenx-green/30 text-tenx-white hover:bg-tenx-green/10">
+            Visit Website
+          </Button>
+        </a>
       </div>
     </div>
   );
