@@ -32,40 +32,40 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-white">
+    <section id="contact" className="section-padding bg-tenx-black">
       <div className="tenx-container">
         <div className="mb-16 text-center">
-          <h2 className="heading-lg mb-4 text-tenx-navy">Get in Touch</h2>
-          <div className="w-20 h-1 bg-tenx-gold mx-auto mb-6"></div>
-          <p className="max-w-3xl mx-auto text-lg text-tenx-navy/80">
+          <h2 className="heading-lg mb-4 text-tenx-white">Get in Touch</h2>
+          <div className="w-20 h-1 bg-tenx-green mx-auto mb-6"></div>
+          <p className="max-w-3xl mx-auto text-lg text-tenx-white/90">
             Interested in learning more about our investment approach or discussing potential opportunities? We'd love to hear from you.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2">
-            <div className="bg-tenx-navy text-white p-8 rounded-lg">
+            <div className="bg-tenx-gray text-white p-8 rounded-lg">
               <h3 className="heading-sm mb-6">Contact Information</h3>
               
               <div className="space-y-6">
                 <ContactInfo 
-                  icon={<Mail className="h-5 w-5 text-tenx-gold" />}
+                  icon={<Mail className="h-5 w-5 text-tenx-green" />}
                   title="Email Us"
-                  detail="info@10xlegacy.com"
+                  detail="info@tenxcapital.com"
                 />
                 <ContactInfo 
-                  icon={<Phone className="h-5 w-5 text-tenx-gold" />}
+                  icon={<Phone className="h-5 w-5 text-tenx-green" />}
                   title="Call Us"
                   detail="+1 (234) 567-8900"
                 />
                 <ContactInfo 
-                  icon={<MapPin className="h-5 w-5 text-tenx-gold" />}
+                  icon={<MapPin className="h-5 w-5 text-tenx-green" />}
                   title="Visit Us"
                   detail="123 Legacy Tower, Lagos, Nigeria"
                 />
               </div>
 
-              <div className="mt-8 pt-6 border-t border-white/10">
+              <div className="mt-8 pt-6 border-t border-white/20">
                 <h4 className="font-medium mb-3">Follow Us</h4>
                 <div className="flex space-x-4">
                   <SocialButton href="#" label="Twitter" />
@@ -77,10 +77,10 @@ const Contact = () => {
           </div>
 
           <div className="lg:col-span-3">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-tenx-gray/50 p-8 rounded-lg">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-tenx-navy">
+                  <label htmlFor="name" className="text-sm font-medium text-tenx-white">
                     Your Name
                   </label>
                   <Input
@@ -90,11 +90,11 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="border-tenx-navy/20 focus:border-tenx-gold"
+                    className="border-tenx-green/20 bg-tenx-black/50 text-white focus:border-tenx-green"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium text-tenx-navy">
+                  <label htmlFor="email" className="text-sm font-medium text-tenx-white">
                     Your Email
                   </label>
                   <Input
@@ -105,13 +105,13 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="border-tenx-navy/20 focus:border-tenx-gold"
+                    className="border-tenx-green/20 bg-tenx-black/50 text-white focus:border-tenx-green"
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-tenx-navy">
+                <label htmlFor="message" className="text-sm font-medium text-tenx-white">
                   Your Message
                 </label>
                 <Textarea
@@ -121,13 +121,13 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="min-h-[150px] border-tenx-navy/20 focus:border-tenx-gold"
+                  className="min-h-[150px] border-tenx-green/20 bg-tenx-black/50 text-white focus:border-tenx-green"
                 />
               </div>
 
               <Button
                 type="submit"
-                className="tenx-gold-gradient w-full sm:w-auto"
+                className="tenx-green-gradient w-full sm:w-auto"
                 size="lg"
               >
                 Send Message
@@ -151,7 +151,7 @@ const ContactInfo = ({ icon, title, detail }: ContactInfoProps) => {
     <div className="flex items-start">
       <div className="mr-3 mt-1">{icon}</div>
       <div>
-        <h4 className="text-sm font-medium text-white/70">{title}</h4>
+        <h4 className="text-sm font-medium text-white/80">{title}</h4>
         <p className="text-white">{detail}</p>
       </div>
     </div>
@@ -167,7 +167,7 @@ const SocialButton = ({ href, label }: SocialButtonProps) => {
   return (
     <a
       href={href}
-      className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-tenx-gold transition-colors"
+      className="w-10 h-10 rounded-full bg-tenx-black flex items-center justify-center hover:bg-tenx-green transition-colors"
       aria-label={label}
     >
       <span className="text-xs font-medium">{label.charAt(0)}</span>
