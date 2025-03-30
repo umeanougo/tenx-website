@@ -63,13 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for 10X
+				// Updated custom colors for TenX Capital
 				tenx: {
-					navy: '#0A2342',
-					gold: '#E0A458',
-					cream: '#F7F3E3',
-					brown: '#674832',
-					black: '#191919'
+					black: '#000000',
+					green: '#22c55e', // A vibrant green
+					darkgreen: '#15803d', // A darker green for hover states
+					white: '#ffffff',
+					gray: '#1f1f1f' // A dark gray for contrast
 				}
 			},
 			fontFamily: {
