@@ -35,7 +35,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center space-x-4">
             <a
-              href="https://www.linkedin.com/company/tenx-capital"
+              href="https://www.linkedin.com/company/tenx-ca"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-tenx-white/80 hover:text-tenx-green transition-colors"
