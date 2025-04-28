@@ -18,14 +18,14 @@ const Portfolio = () => {
           <PortfolioCard
             name="Zole"
             description="A fintech platform revolutionizing cross-border payments across African markets, making international transactions seamless and affordable."
-            image="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=1000"
+            image="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&q=80&w=1000"
             category="Financial Technology"
             websiteUrl="https://zole.app/"
           />
           <PortfolioCard
             name="OneCliq"
             description="An e-commerce solution providing small African businesses with tools to reach global markets through simplified logistics and payment processing."
-            image="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1000"
+            image="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?auto=format&fit=crop&q=80&w=1000"
             category="E-Commerce"
             websiteUrl="https://www.onecliq.io/"
           />
