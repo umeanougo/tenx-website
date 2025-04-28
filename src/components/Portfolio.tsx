@@ -1,4 +1,3 @@
-
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -24,7 +23,7 @@ const Portfolio = () => {
           />
           <PortfolioCard
             name="OneCliq"
-            description="An e-commerce solution providing small African businesses with tools to reach global markets through simplified logistics and payment processing."
+            description="A digital marketplace connecting African businesses with global suppliers, offering a wide range of products from electronics to fashion with secure payment options and reliable delivery."
             image="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?auto=format&fit=crop&q=80&w=1000"
             category="E-Commerce"
             websiteUrl="https://www.onecliq.io/"
