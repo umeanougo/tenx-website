@@ -18,14 +18,14 @@ const Portfolio = () => {
           <PortfolioCard
             name="Zole"
             description="A fintech platform revolutionizing cross-border payments across African markets, making international transactions seamless and affordable."
-            image="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&q=80&w=1000"
+            logoSrc="/lovable-uploads/a355d237-bd7a-4817-88eb-69c1a0dc15db.png"
             category="Financial Technology"
             websiteUrl="https://zole.app/"
           />
           <PortfolioCard
             name="OneCliq"
             description="A powerful AI-driven platform that turns consumer conversations into marketing campaigns, helping businesses collect data, generate insights, build briefs, and create assets in record time."
-            image="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?auto=format&fit=crop&q=80&w=1000"
+            logoSrc="/lovable-uploads/7804040c-3fce-4095-b7b4-86db3ebc5599.png"
             category="Marketing Technology"
             websiteUrl="https://www.onecliq.io/"
           />
@@ -47,44 +47,46 @@ const Portfolio = () => {
 interface PortfolioCardProps {
   name: string;
   description: string;
-  image: string;
+  logoSrc: string;
   category: string;
   websiteUrl: string;
 }
 
-const PortfolioCard = ({ name, description, image, category, websiteUrl }: PortfolioCardProps) => {
+const PortfolioCard = ({ name, description, logoSrc, category, websiteUrl }: PortfolioCardProps) => {
   return (
     <div className="group bg-tenx-gray rounded-lg overflow-hidden shadow-md border border-tenx-green/10 hover:shadow-lg transition-all">
-      <div className="aspect-w-16 aspect-h-9 relative">
-        <img
-          src={image}
-          alt={`${name} company`}
-          className="w-full h-60 object-cover transition-transform group-hover:scale-105"
-        />
-        <div className="absolute top-4 left-4">
+      <div className="p-6 flex flex-col h-full">
+        <div className="flex justify-between items-start mb-6">
+          <div className="h-16 flex items-center">
+            <img
+              src={logoSrc}
+              alt={`${name} logo`}
+              className="h-full object-contain"
+            />
+          </div>
           <span className="inline-block bg-tenx-black/80 text-white text-sm font-medium px-3 py-1 rounded-full">
             {category}
           </span>
         </div>
-      </div>
-      <div className="p-6">
-        <div className="flex justify-between items-center mb-3">
-          <h3 className="text-2xl font-heading font-bold text-tenx-white">{name}</h3>
-          <a 
-            href={websiteUrl} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="h-8 w-8 rounded-full flex items-center justify-center bg-tenx-green/10 text-tenx-green hover:bg-tenx-green hover:text-white transition-colors"
-          >
-            <ArrowUpRight className="h-4 w-4" />
-          </a>
+        <div className="flex-grow">
+          <div className="flex justify-between items-center mb-3">
+            <h3 className="text-2xl font-heading font-bold text-tenx-white">{name}</h3>
+            <a 
+              href={websiteUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="h-8 w-8 rounded-full flex items-center justify-center bg-tenx-green/10 text-tenx-green hover:bg-tenx-green hover:text-white transition-colors"
+            >
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
+          </div>
+          <p className="text-tenx-white/90 mb-4">{description}</p>
         </div>
-        <p className="text-tenx-white/90 mb-4">{description}</p>
         <a 
           href={websiteUrl} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="inline-block w-full"
+          className="inline-block w-full mt-4"
         >
           <Button variant="outline" className="w-full border-tenx-green/30 text-tenx-white hover:bg-tenx-green/10">
             Visit Website
