@@ -41,7 +41,6 @@ const Navbar = () => {
                     <NavLink to="/#portfolio" onClick={toggleMenu}>Portfolio</NavLink>
                     <NavLink to="/#approach" onClick={toggleMenu}>Approach</NavLink>
                     <NavLink to="/#contact" onClick={toggleMenu}>Contact</NavLink>
-                    <Button className="tenx-green-gradient">Schedule Call</Button>
                   </div>
                 </div>
               )}
@@ -52,7 +51,6 @@ const Navbar = () => {
               <NavLink to="/#portfolio">Portfolio</NavLink>
               <NavLink to="/#approach">Approach</NavLink>
               <NavLink to="/#contact">Contact</NavLink>
-              <Button className="tenx-green-gradient">Schedule Call</Button>
             </div>
           )}
         </nav>
