@@ -32,10 +32,16 @@ const Portfolio = () => {
         </div>
 
         <div className="text-center">
-          <p className="text-tenx-white/80 mb-4">
+          <p className="text-tenx-white/80 mb-6">
             Interested in joining our portfolio of exceptional businesses?
           </p>
-          <Button className="tenx-green-gradient" size="lg">
+          <Button 
+            className="tenx-green-gradient" 
+            size="lg" 
+            onClick={() => {
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Get in Touch
           </Button>
         </div>
@@ -55,7 +61,7 @@ interface PortfolioCardProps {
 const PortfolioCard = ({ name, description, logoSrc, category, websiteUrl }: PortfolioCardProps) => {
   return (
     <div className="group bg-tenx-gray rounded-lg overflow-hidden shadow-md border border-tenx-green/10 hover:shadow-lg transition-all">
-      <div className="p-6 flex flex-col h-full">
+      <div className="p-8 flex flex-col h-full">
         <div className="flex justify-between items-start mb-6">
           <div className="h-16 flex items-center">
             <img
@@ -86,7 +92,7 @@ const PortfolioCard = ({ name, description, logoSrc, category, websiteUrl }: Por
           href={websiteUrl} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="inline-block w-full mt-4"
+          className="inline-block w-full mt-6"
         >
           <Button variant="outline" className="w-full border-tenx-green/30 text-tenx-white hover:bg-tenx-green/10">
             Visit Website
