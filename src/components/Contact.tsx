@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -51,27 +51,13 @@ const Contact = () => {
                 <ContactInfo 
                   icon={<Mail className="h-5 w-5 text-tenx-green" />}
                   title="Email Us"
-                  detail="info@tenxcapital.com"
+                  detail="admin@tenxcapital.ca"
                 />
                 <ContactInfo 
                   icon={<Phone className="h-5 w-5 text-tenx-green" />}
                   title="Call Us"
-                  detail="+1 (234) 567-8900"
+                  detail="+1 514 778 4873"
                 />
-                <ContactInfo 
-                  icon={<MapPin className="h-5 w-5 text-tenx-green" />}
-                  title="Visit Us"
-                  detail="123 Legacy Tower, Lagos, Nigeria"
-                />
-              </div>
-
-              <div className="mt-8 pt-6 border-t border-white/20">
-                <h4 className="font-medium mb-3">Follow Us</h4>
-                <div className="flex space-x-4">
-                  <SocialButton href="#" label="Twitter" />
-                  <SocialButton href="#" label="LinkedIn" />
-                  <SocialButton href="#" label="Instagram" />
-                </div>
               </div>
             </div>
           </div>
@@ -155,23 +141,6 @@ const ContactInfo = ({ icon, title, detail }: ContactInfoProps) => {
         <p className="text-white">{detail}</p>
       </div>
     </div>
-  );
-};
-
-interface SocialButtonProps {
-  href: string;
-  label: string;
-}
-
-const SocialButton = ({ href, label }: SocialButtonProps) => {
-  return (
-    <a
-      href={href}
-      className="w-10 h-10 rounded-full bg-tenx-black flex items-center justify-center hover:bg-tenx-green transition-colors"
-      aria-label={label}
-    >
-      <span className="text-xs font-medium">{label.charAt(0)}</span>
-    </a>
   );
 };
 

@@ -19,13 +19,11 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-12 gap-y-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-x-12 gap-y-4">
             <FooterLink href="/#about">About</FooterLink>
             <FooterLink href="/#portfolio">Portfolio</FooterLink>
             <FooterLink href="/#approach">Approach</FooterLink>
             <FooterLink href="/#contact">Contact</FooterLink>
-            <FooterLink href="#">Privacy Policy</FooterLink>
-            <FooterLink href="#">Terms of Service</FooterLink>
           </div>
         </div>
         
