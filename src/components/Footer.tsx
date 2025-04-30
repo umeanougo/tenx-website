@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Linkedin } from "lucide-react";
 
@@ -11,11 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/47e66b76-b2be-4804-ad39-82b4b549bfe5.png" 
-                alt="TenX Capital" 
-                className="h-12 md:h-14" /* Increased from h-8 to h-12/h-14 responsive */
-              />
+              <span className="text-white font-bold text-2xl">Ten<span className="text-tenx-green">X</span> CAPITAL</span>
             </Link>
             <p className="mt-2 text-tenx-white/70 max-w-md">
               Empowering Black entrepreneurship through strategic investments and meaningful partnerships.
