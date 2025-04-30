@@ -11,8 +11,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
-              <span className="font-heading text-2xl font-bold text-tenx-white">TenX</span>
-              <span className="ml-1 text-tenx-green font-bold">CAPITAL</span>
+              <img 
+                src="/lovable-uploads/47e66b76-b2be-4804-ad39-82b4b549bfe5.png" 
+                alt="TenX Capital" 
+                className="h-8" 
+              />
             </Link>
             <p className="mt-2 text-tenx-white/70 max-w-md">
               Empowering Black entrepreneurship through strategic investments and meaningful partnerships.
