@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/47e66b76-b2be-4804-ad39-82b4b549bfe5.png" 
                 alt="TenX Capital" 
-                className="h-8" 
+                className="h-12 md:h-14" /* Increased from h-8 to h-12/h-14 responsive */
               />
             </Link>
             <p className="mt-2 text-tenx-white/70 max-w-md">
