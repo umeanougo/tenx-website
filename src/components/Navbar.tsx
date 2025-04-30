@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -18,11 +17,7 @@ const Navbar = () => {
       <div className="tenx-container py-4">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/47e66b76-b2be-4804-ad39-82b4b549bfe5.png" 
-              alt="TenX Capital" 
-              className="h-12 md:h-14" /* Increased from h-8 to h-12/h-14 responsive */
-            />
+            <span className="text-tenx-green font-bold text-xl">TenX Capital</span>
           </Link>
 
           {isMobile ? (
