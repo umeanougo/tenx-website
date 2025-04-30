@@ -66,11 +66,26 @@ interface NavLinkProps {
 }
 
 const NavLink = ({ to, children, onClick }: NavLinkProps) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    
+    // Extract the section ID from the URL
+    const sectionId = to.split('#')[1];
+    const section = document.getElementById(sectionId);
+    
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // Call the additional onClick handler if provided (for mobile menu)
+    if (onClick) onClick();
+  };
+
   return (
     <a 
       href={to} 
       className="text-tenx-white font-medium hover:text-tenx-green transition-colors"
-      onClick={onClick}
+      onClick={handleClick}
     >
       {children}
     </a>

@@ -18,11 +18,24 @@ const Hero = () => {
             TenX Capital is a private equity firm founded by ten visionary Nigerian entrepreneurs, dedicated to identifying and investing in high-potential Black-owned businesses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="tenx-green-gradient">
+            <Button 
+              size="lg" 
+              className="tenx-green-gradient"
+              onClick={() => {
+                document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Explore Our Portfolio
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-tenx-green text-tenx-white hover:bg-tenx-green/10">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-transparent border-tenx-green text-tenx-white hover:bg-tenx-green/10"
+              onClick={() => {
+                document.getElementById('approach')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Our Approach
             </Button>
           </div>
