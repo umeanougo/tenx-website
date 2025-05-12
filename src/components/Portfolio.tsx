@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="section-padding bg-tenx-black">
+    <section id="portfolio" className="section-padding bg-tenx-white">
       <div className="tenx-container">
         <div className="mb-16 text-center">
-          <h2 className="heading-lg mb-4 text-tenx-white">Our Portfolio</h2>
+          <h2 className="heading-lg mb-4">Our Portfolio</h2>
           <div className="w-20 h-1 bg-tenx-green mx-auto mb-6"></div>
-          <p className="max-w-3xl mx-auto text-lg text-tenx-white/90">
+          <p className="max-w-3xl mx-auto text-lg text-tenx-black/90">
             We invest in visionary Black-owned businesses with exceptional growth potential and strong leadership.
           </p>
         </div>
@@ -32,7 +32,7 @@ const Portfolio = () => {
         </div>
 
         <div className="text-center">
-          <p className="text-tenx-white/80 mb-6">
+          <p className="text-tenx-black/80 mb-6">
             Interested in joining our portfolio of exceptional businesses?
           </p>
           <Button 
@@ -60,7 +60,7 @@ interface PortfolioCardProps {
 
 const PortfolioCard = ({ name, description, logoSrc, category, websiteUrl }: PortfolioCardProps) => {
   return (
-    <div className="group bg-tenx-gray rounded-lg overflow-hidden shadow-md border border-tenx-green/10 hover:shadow-lg transition-all">
+    <div className="group bg-tenx-white rounded-lg overflow-hidden shadow-md border border-tenx-green/20 hover:shadow-lg transition-all">
       <div className="p-8 flex flex-col h-full">
         <div className="flex justify-between items-start mb-6">
           <div className="h-16 flex items-center">
@@ -70,13 +70,13 @@ const PortfolioCard = ({ name, description, logoSrc, category, websiteUrl }: Por
               className="h-full object-contain"
             />
           </div>
-          <span className="inline-block bg-tenx-black/80 text-white text-sm font-medium px-3 py-1 rounded-full">
+          <span className="inline-block bg-tenx-green/10 text-tenx-black text-sm font-medium px-3 py-1 rounded-full">
             {category}
           </span>
         </div>
         <div className="flex-grow">
           <div className="flex justify-between items-center mb-3">
-            <h3 className="text-2xl font-heading font-bold text-tenx-white">{name}</h3>
+            <h3 className="text-2xl font-heading font-bold text-tenx-black">{name}</h3>
             <a 
               href={websiteUrl} 
               target="_blank" 
@@ -86,7 +86,7 @@ const PortfolioCard = ({ name, description, logoSrc, category, websiteUrl }: Por
               <ArrowUpRight className="h-4 w-4" />
             </a>
           </div>
-          <p className="text-tenx-white/90 mb-4">{description}</p>
+          <p className="text-tenx-black/90 mb-4">{description}</p>
         </div>
         <a 
           href={websiteUrl} 
@@ -94,7 +94,7 @@ const PortfolioCard = ({ name, description, logoSrc, category, websiteUrl }: Por
           rel="noopener noreferrer"
           className="inline-block w-full mt-6"
         >
-          <Button variant="outline" className="w-full border-tenx-green/30 text-tenx-white hover:bg-tenx-green/10">
+          <Button variant="outline" className="w-full border-tenx-green text-tenx-black hover:bg-tenx-green/10">
             Visit Website
           </Button>
         </a>

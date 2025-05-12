@@ -3,12 +3,12 @@ import { CircleCheck, Target, Users, TrendingUp } from "lucide-react";
 
 const Approach = () => {
   return (
-    <section id="approach" className="section-padding bg-tenx-black text-tenx-white">
+    <section id="approach" className="section-padding bg-tenx-white">
       <div className="tenx-container">
         <div className="mb-16 text-center">
-          <h2 className="heading-lg mb-4">Our Investment Approach</h2>
+          <h2 className="heading-lg mb-4">Our Approach</h2>
           <div className="w-20 h-1 bg-tenx-green mx-auto mb-6"></div>
-          <p className="max-w-3xl mx-auto text-lg text-white/90">
+          <p className="max-w-3xl mx-auto text-lg text-tenx-black/90">
             We take a hands-on approach to partnering with Black-owned businesses, providing both capital and expertise to drive exceptional growth.
           </p>
         </div>
@@ -48,11 +48,11 @@ interface ApproachStepProps {
 
 const ApproachStep = ({ icon, title, description }: ApproachStepProps) => {
   return (
-    <div className="relative p-6 bg-tenx-gray/30 rounded-lg hover:bg-tenx-gray/50 transition-colors">
+    <div className="relative p-6 bg-tenx-white rounded-lg border border-tenx-green/20 shadow-sm hover:shadow-md transition-shadow">
       <div className="relative z-10">
         <div className="mb-4">{icon}</div>
-        <h3 className="heading-sm mb-3">{title}</h3>
-        <p className="text-white/90">{description}</p>
+        <h3 className="heading-sm mb-3 text-tenx-black">{title}</h3>
+        <p className="text-tenx-black/90">{description}</p>
       </div>
     </div>
   );
