@@ -35,9 +35,9 @@ const Contact = () => {
     <section id="contact" className="section-padding bg-tenx-white">
       <div className="tenx-container">
         <div className="mb-16 text-center">
-          <h2 className="heading-lg mb-4 text-tenx-white">Get in Touch</h2>
+          <h2 className="heading-lg mb-4">Get in Touch</h2>
           <div className="w-20 h-1 bg-tenx-green mx-auto mb-6"></div>
-          <p className="max-w-3xl mx-auto text-lg text-tenx-white/90">
+          <p className="max-w-3xl mx-auto text-lg text-tenx-black/90">
             Interested in learning more about our investment approach or discussing potential opportunities? We'd love to hear from you.
           </p>
         </div>
