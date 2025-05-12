@@ -18,7 +18,11 @@ const Navbar = () => {
       <div className="tenx-container py-4">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <span className="text-tenx-black font-bold text-2xl">Ten<span className="text-tenx-green">X</span> CAPITAL</span>
+            <img 
+              src="/lovable-uploads/dd9fbdc0-1bba-4cfb-8914-3d397008f1c3.png" 
+              alt="TenX Capital Logo" 
+              className="h-10" 
+            />
           </Link>
 
           {isMobile ? (
