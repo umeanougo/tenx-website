@@ -14,14 +14,14 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-tenx-white/90 backdrop-blur-md border-b border-tenx-green/20">
-      <div className="tenx-container py-4">
+    <header className="sticky top-0 z-50 w-full bg-tenx-white border-b border-tenx-green/10 shadow-sm">
+      <div className="tenx-container py-3">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/dd9fbdc0-1bba-4cfb-8914-3d397008f1c3.png" 
               alt="TenX Capital Logo" 
-              className="h-18" // Increased from h-10 to approximately 80% bigger
+              className="h-18" 
             />
           </Link>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
               )}
             </>
           ) : (
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-8">
               <NavLink to="/#about">About</NavLink>
               <NavLink to="/#portfolio">Portfolio</NavLink>
               <NavLink to="/#approach">Approach</NavLink>

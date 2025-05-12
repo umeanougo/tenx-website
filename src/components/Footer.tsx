@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-tenx-white text-tenx-black py-12 border-t border-tenx-green/20">
+    <footer className="bg-tenx-white text-tenx-black py-12 border-t border-tenx-green/10">
       <div className="tenx-container">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-6 md:mb-0">
@@ -14,15 +14,15 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/dd9fbdc0-1bba-4cfb-8914-3d397008f1c3.png" 
                 alt="TenX Capital Logo" 
-                className="h-18" // Increased from h-10 to approximately 80% bigger
+                className="h-18"
               />
             </Link>
-            <p className="mt-2 text-tenx-gray max-w-md">
+            <p className="mt-3 text-tenx-gray max-w-md">
               Empowering Black entrepreneurship through strategic investments and meaningful partnerships.
             </p>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-x-12 gap-y-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-x-16 gap-y-4">
             <FooterLink href="/#about">About</FooterLink>
             <FooterLink href="/#portfolio">Portfolio</FooterLink>
             <FooterLink href="/#approach">Approach</FooterLink>
