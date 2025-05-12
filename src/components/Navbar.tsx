@@ -21,7 +21,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/dd9fbdc0-1bba-4cfb-8914-3d397008f1c3.png" 
               alt="TenX Capital Logo" 
-              className="h-10" 
+              className="h-18" // Increased from h-10 to approximately 80% bigger
             />
           </Link>
 

@@ -88,4 +88,9 @@
   .tenx-black-gradient {
     @apply bg-gradient-to-r from-tenx-black to-tenx-gray text-tenx-white;
   }
+
+  /* Custom height utility for the logo */
+  .h-18 {
+    height: 4.5rem; /* 72px, which is 80% bigger than h-10 (40px) */
+  }
 }

@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/dd9fbdc0-1bba-4cfb-8914-3d397008f1c3.png" 
                 alt="TenX Capital Logo" 
-                className="h-10" 
+                className="h-18" // Increased from h-10 to approximately 80% bigger
               />
             </Link>
             <p className="mt-2 text-tenx-gray max-w-md">
@@ -61,7 +61,7 @@ const FooterLink = ({ href, children }: FooterLinkProps) => {
   return (
     <a 
       href={href} 
-      className="text-tenx-gray hover:text-tenx-green transition-colors"
+      className="text-tenx-gray hover:text-tenx-green transition-colors font-medium"
     >
       {children}
     </a>
