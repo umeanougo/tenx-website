@@ -63,13 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Updated custom colors for TenX Capital
+				// Updated custom colors for TenX Capital based on the new logo
 				tenx: {
-					black: '#000000',
-					green: '#22c55e', // A vibrant green
-					darkgreen: '#15803d', // A darker green for hover states
-					white: '#ffffff',
-					gray: '#1f1f1f' // A dark gray for contrast
+					black: '#2A3730', // Updated to dark green from logo for "Ten"
+					green: '#8A9A7D', // Updated to sage green from logo for "X"
+					darkgreen: '#1E2923', // Darker variant of the main green
+					white: '#FFFBF0', // Cream background from logo
+					gray: '#4A5048' // A complementary gray tone
 				}
 			},
 			fontFamily: {

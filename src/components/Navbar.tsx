@@ -14,11 +14,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-tenx-black/90 backdrop-blur-md border-b border-tenx-green/20">
+    <header className="sticky top-0 z-50 w-full bg-tenx-white/90 backdrop-blur-md border-b border-tenx-green/20">
       <div className="tenx-container py-4">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <span className="text-white font-bold text-2xl">Ten<span className="text-tenx-green">X</span> CAPITAL</span>
+            <span className="text-tenx-black font-bold text-2xl">Ten<span className="text-tenx-green">X</span> CAPITAL</span>
           </Link>
 
           {isMobile ? (
@@ -28,13 +28,13 @@ const Navbar = () => {
                 size="icon"
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
-                className="text-tenx-white"
+                className="text-tenx-black"
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </Button>
 
               {isMenuOpen && (
-                <div className="fixed inset-0 top-16 bg-tenx-black z-40 animate-fade-in">
+                <div className="fixed inset-0 top-16 bg-tenx-white z-40 animate-fade-in">
                   <div className="flex flex-col items-center justify-center h-full space-y-8">
                     <NavLink to="/#about" onClick={toggleMenu}>About</NavLink>
                     <NavLink to="/#portfolio" onClick={toggleMenu}>Portfolio</NavLink>
@@ -83,7 +83,7 @@ const NavLink = ({ to, children, onClick }: NavLinkProps) => {
   return (
     <a 
       href={to} 
-      className="text-tenx-white font-medium hover:text-tenx-green transition-colors"
+      className="text-tenx-black font-medium hover:text-tenx-green transition-colors"
       onClick={handleClick}
     >
       {children}
