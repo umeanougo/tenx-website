@@ -7,13 +7,13 @@
 
 @layer base {
   :root {
-    --background: 40 30% 96%;
+    --background: 37, 100%, 96%;
     --foreground: 160 15% 19%;
 
-    --card: 40 30% 96%;
+    --card: 37, 100%, 96%;
     --card-foreground: 160 15% 19%;
 
-    --popover: 40 30% 96%;
+    --popover: 37, 100%, 96%;
     --popover-foreground: 160 15% 19%;
 
     --primary: 84 15% 55%;
@@ -38,11 +38,11 @@
     --radius: 0.5rem;
 
     --sidebar-background: 160 15% 19%;
-    --sidebar-foreground: 40 30% 96%;
+    --sidebar-foreground: 37, 100%, 96%;
     --sidebar-primary: 84 15% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 160 10% 25%;
-    --sidebar-accent-foreground: 40 30% 96%;
+    --sidebar-accent-foreground: 37, 100%, 96%;
     --sidebar-border: 160 10% 30%;
     --sidebar-ring: 84 15% 55%;
   }
