@@ -10,21 +10,21 @@ const Portfolio = () => {
           <h2 className="heading-lg mb-4">Our Portfolio</h2>
           <div className="w-20 h-1 bg-tenx-green mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-tenx-black/90">
-            We invest in visionary Black-owned businesses with exceptional growth potential and strong leadership.
+            We invest in visionary businesses with exceptional growth potential and strong leadership.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 mb-16">
           <PortfolioCard
             name="Zole"
-            description="A fintech platform revolutionizing cross-border payments across African markets, making international transactions seamless and affordable."
+            description="A fintech platform revolutionizing cross-border payments across global markets, making international transactions seamless and affordable."
             logoSrc="/lovable-uploads/a355d237-bd7a-4817-88eb-69c1a0dc15db.png"
             category="Financial Technology"
             websiteUrl="https://zole.app/"
           />
           <PortfolioCard
             name="OneCliq"
-            description="A powerful AI-driven platform that turns consumer conversations into marketing campaigns, helping businesses collect data, generate insights, build briefs, and create assets in record time."
+            description="A powerful AI-driven platform that turns consumer conversations into marketing campaigns, helping businesses collect data and generate insights."
             logoSrc="/lovable-uploads/7804040c-3fce-4095-b7b4-86db3ebc5599.png"
             category="Marketing Technology"
             websiteUrl="https://www.onecliq.io/"

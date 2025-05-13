@@ -9,7 +9,7 @@ const Approach = () => {
           <h2 className="heading-lg mb-4">Our Approach</h2>
           <div className="w-20 h-1 bg-tenx-green mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-tenx-black/90">
-            We take a hands-on approach to partnering with Black-owned businesses, providing both capital and expertise to drive exceptional growth.
+            We take a hands-on approach to partnering with businesses, providing both capital and expertise to drive exceptional growth.
           </p>
         </div>
 

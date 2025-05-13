@@ -9,7 +9,7 @@ const About = () => {
           <h2 className="heading-lg mb-4">Our Story</h2>
           <div className="w-20 h-1 bg-tenx-green mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-tenx-black/90">
-            Founded by a collective of 10 visionary Nigerian entrepreneurs, TenX Capital was born from a shared mission to create generational wealth and equity while upholding Christian values.
+            Founded by a collective of 10 visionary entrepreneurs, TenX Capital was born from a shared mission to create generational wealth and equity while upholding Christian values.
           </p>
         </div>
 
@@ -17,7 +17,7 @@ const About = () => {
           <div className="order-2 md:order-1">
             <h3 className="heading-md mb-4">Our Mission</h3>
             <p className="mb-6 text-tenx-black/90">
-              At TenX Capital, we're committed to scaling exceptional Black-owned businesses through strategic investments, mentorship, and a wealth of collective experience.
+              At TenX Capital, we're committed to scaling exceptional businesses through strategic investments, mentorship, and a wealth of collective experience.
             </p>
             <p className="text-tenx-black/90">
               Our foundation is built on Christian principles, driving us to create lasting impact and generational prosperity for the communities we serve.
