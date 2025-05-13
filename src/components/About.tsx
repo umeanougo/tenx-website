@@ -3,7 +3,7 @@ import { Users, Gem, Heart, Briefcase } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-tenx-white">
+    <section id="about" className="section-padding bg-[#fff7ea]">
       <div className="tenx-container">
         <div className="mb-12 text-center">
           <h2 className="heading-lg mb-4">Our Story</h2>

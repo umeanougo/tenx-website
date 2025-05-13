@@ -44,7 +44,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2">
-            <div className="bg-white shadow-sm p-8 rounded-lg">
+            <div className="bg-[#fff7ea] shadow-sm p-8 rounded-lg border border-tenx-green/20">
               <h3 className="heading-sm mb-6 text-tenx-black">Contact Information</h3>
               
               <div className="space-y-6">
@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
 
           <div className="lg:col-span-3">
-            <form onSubmit={handleSubmit} className="space-y-6 bg-white shadow-sm p-8 rounded-lg">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-[#fff7ea] shadow-sm p-8 rounded-lg border border-tenx-green/20">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-tenx-black">
@@ -76,7 +76,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="border-tenx-green/20 bg-tenx-white/50 text-tenx-black focus:border-tenx-green"
+                    className="border-tenx-green/20 bg-[#fff7ea] text-tenx-black focus:border-tenx-green"
                   />
                 </div>
                 <div className="space-y-2">
@@ -91,7 +91,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="border-tenx-green/20 bg-tenx-white/50 text-tenx-black focus:border-tenx-green"
+                    className="border-tenx-green/20 bg-[#fff7ea] text-tenx-black focus:border-tenx-green"
                   />
                 </div>
               </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="min-h-[150px] border-tenx-green/20 bg-tenx-white/50 text-tenx-black focus:border-tenx-green"
+                  className="min-h-[150px] border-tenx-green/20 bg-[#fff7ea] text-tenx-black focus:border-tenx-green"
                 />
               </div>
 

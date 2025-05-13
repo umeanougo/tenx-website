@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="section-padding bg-tenx-white">
+    <section id="portfolio" className="section-padding bg-[#fff7ea]">
       <div className="tenx-container">
         <div className="mb-16 text-center">
           <h2 className="heading-lg mb-4">Our Portfolio</h2>

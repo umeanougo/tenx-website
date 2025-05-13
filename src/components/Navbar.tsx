@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-tenx-white border-b border-tenx-green/10 shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-[#fff7ea] border-b border-tenx-green/10 shadow-sm">
       <div className="tenx-container py-3">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
@@ -38,7 +38,7 @@ const Navbar = () => {
               </Button>
 
               {isMenuOpen && (
-                <div className="fixed inset-0 top-16 bg-tenx-white z-40 animate-fade-in">
+                <div className="fixed inset-0 top-16 bg-[#fff7ea] z-40 animate-fade-in">
                   <div className="flex flex-col items-center justify-center h-full space-y-8">
                     <NavLink to="/#about" onClick={toggleMenu}>About</NavLink>
                     <NavLink to="/#portfolio" onClick={toggleMenu}>Portfolio</NavLink>

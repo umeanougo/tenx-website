@@ -3,7 +3,7 @@ import { CircleCheck, Target, Users, TrendingUp } from "lucide-react";
 
 const Approach = () => {
   return (
-    <section id="approach" className="section-padding bg-tenx-white">
+    <section id="approach" className="section-padding bg-[#fff7ea]">
       <div className="tenx-container">
         <div className="mb-16 text-center">
           <h2 className="heading-lg mb-4">Our Approach</h2>
@@ -48,7 +48,7 @@ interface ApproachStepProps {
 
 const ApproachStep = ({ icon, title, description }: ApproachStepProps) => {
   return (
-    <div className="relative p-6 bg-tenx-white rounded-lg border border-tenx-green/20 shadow-sm hover:shadow-md transition-shadow">
+    <div className="relative p-6 bg-[#fff7ea] rounded-lg border border-tenx-green/20 shadow-sm hover:shadow-md transition-shadow">
       <div className="relative z-10">
         <div className="mb-4">{icon}</div>
         <h3 className="heading-sm mb-3 text-tenx-black">{title}</h3>
