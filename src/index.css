@@ -52,7 +52,7 @@
   }
 
   body {
-    @apply bg-tenx-white text-tenx-black font-sans;
+    @apply bg-[#fff7ea] text-tenx-black font-sans;
   }
 }
 
@@ -82,7 +82,7 @@
   }
   
   .tenx-green-gradient {
-    @apply bg-gradient-to-r from-tenx-green/90 to-tenx-green text-white;
+    @apply bg-tenx-green hover:bg-tenx-green/90 text-white;
   }
   
   .tenx-black-gradient {

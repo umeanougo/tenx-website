@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-tenx-white">
+    <section id="contact" className="section-padding bg-[#fff7ea]">
       <div className="tenx-container">
         <div className="mb-16 text-center">
           <h2 className="heading-lg mb-4">Get in Touch</h2>
@@ -44,8 +44,8 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2">
-            <div className="bg-tenx-gray text-white p-8 rounded-lg">
-              <h3 className="heading-sm mb-6">Contact Information</h3>
+            <div className="bg-white shadow-sm p-8 rounded-lg">
+              <h3 className="heading-sm mb-6 text-tenx-black">Contact Information</h3>
               
               <div className="space-y-6">
                 <ContactInfo 
@@ -63,10 +63,10 @@ const Contact = () => {
           </div>
 
           <div className="lg:col-span-3">
-            <form onSubmit={handleSubmit} className="space-y-6 bg-tenx-gray/50 p-8 rounded-lg">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-white shadow-sm p-8 rounded-lg">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-tenx-white">
+                  <label htmlFor="name" className="text-sm font-medium text-tenx-black">
                     Your Name
                   </label>
                   <Input
@@ -76,11 +76,11 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="border-tenx-green/20 bg-tenx-black/50 text-white focus:border-tenx-green"
+                    className="border-tenx-green/20 bg-tenx-white/50 text-tenx-black focus:border-tenx-green"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium text-tenx-white">
+                  <label htmlFor="email" className="text-sm font-medium text-tenx-black">
                     Your Email
                   </label>
                   <Input
@@ -91,13 +91,13 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="border-tenx-green/20 bg-tenx-black/50 text-white focus:border-tenx-green"
+                    className="border-tenx-green/20 bg-tenx-white/50 text-tenx-black focus:border-tenx-green"
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-tenx-white">
+                <label htmlFor="message" className="text-sm font-medium text-tenx-black">
                   Your Message
                 </label>
                 <Textarea
@@ -107,13 +107,13 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="min-h-[150px] border-tenx-green/20 bg-tenx-black/50 text-white focus:border-tenx-green"
+                  className="min-h-[150px] border-tenx-green/20 bg-tenx-white/50 text-tenx-black focus:border-tenx-green"
                 />
               </div>
 
               <Button
                 type="submit"
-                className="tenx-green-gradient w-full sm:w-auto"
+                className="bg-tenx-green hover:bg-tenx-green/90 text-white w-full sm:w-auto"
                 size="lg"
               >
                 Send Message
@@ -137,8 +137,8 @@ const ContactInfo = ({ icon, title, detail }: ContactInfoProps) => {
     <div className="flex items-start">
       <div className="mr-3 mt-1">{icon}</div>
       <div>
-        <h4 className="text-sm font-medium text-white/80">{title}</h4>
-        <p className="text-white">{detail}</p>
+        <h4 className="text-sm font-medium text-tenx-black/80">{title}</h4>
+        <p className="text-tenx-black">{detail}</p>
       </div>
     </div>
   );
